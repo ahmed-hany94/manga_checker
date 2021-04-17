@@ -18,9 +18,9 @@ It's a json file stores the manga related _info_ that I need to keep track of wh
 ## Usage
 
 Run
-python manga_checker
 
 ```
+$ python manga_checker
 Nothing new (-_-)
 Nothing new (-_-)
 Nothing new (-_-)
@@ -58,7 +58,7 @@ Nothing new (-_-)
 Add new manga (interactive)
 
 ```
-manga_checker -n
+$ manga_checker -n
 website: mangakakalot
 manga_url: https://mangakakalot.com/read-aq1cl158504930275
 name: Kings' Viking
@@ -68,11 +68,11 @@ url: https://mangakakalot.com/chapter/kings_viking/chapter_80
 List manga alphabetically
 
 ```
-manga_checker -l
+$ manga_checker -l
 ```
 
 Count manga
 
 ```
-manga_checker -c
+$ manga_checker -c
 ```
