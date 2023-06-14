@@ -1,1 +1,4 @@
-not-sure.txt
+__pycache__
+*.py.swp
+test.py
+.vscode/

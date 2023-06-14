@@ -9,7 +9,6 @@ This script is run manually to scrape new releases from different manga sites an
 It's a json file stores the manga related _info_ that I need to keep track of what needs to be scraped. These _info_ are
 
 ```
-"website": <website name>,
 "manga_url": <url that has new manga releases>,
 "name": <manga name>,
 "url": <latest manga url>
@@ -58,8 +57,7 @@ Nothing new (-_-)
 Add new manga
 
 ```
-$ manga_checker -n
-website: mangakakalot
+$ manga_checker -a
 manga_url: https://mangakakalot.com/read-aq1cl158504930275
 name: Kings' Viking
 url: https://mangakakalot.com/chapter/kings_viking/chapter_80
@@ -68,7 +66,7 @@ url: https://mangakakalot.com/chapter/kings_viking/chapter_80
 List manga alphabetically
 
 ```bash
-$ manga_checker -l
+$ manga_checker -la
 ```
 
 Count manga
