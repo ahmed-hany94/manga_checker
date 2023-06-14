@@ -1,7 +1,7 @@
 [
   {
     "idx": 0,
-    "manga_url": "https://manhuascan.com/manga-kings-viking.html",
+    "manga_url": "https://manhuascan.com/manga/kings-viking",
     "name": "Kings' Viking",
     "url": "https://manhuascan.com/read-kings-viking-chapter-104.html",
     "css_selector": "#list-chapters > p:nth-child(1) > span.title > a"

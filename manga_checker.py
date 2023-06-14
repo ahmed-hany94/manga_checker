@@ -23,6 +23,8 @@ def check_for_updates(file):
 
         try:
             r = requests.get(manga_url)
+            if r.history:
+                el["manga_url"] = r.url
             text = r.text
             soup = bs4(text, "lxml")
 
