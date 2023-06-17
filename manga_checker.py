@@ -14,8 +14,7 @@ pp = pprint.PrettyPrinter(indent=4)
 
 def check_for_updates(file):
     data = json.load(file)
-    for el in data:
-        idx = el["idx"]
+    for index, el in enumerate(data):
         manga_url = el["manga_url"]
         url = el["url"]
         name = el["name"]
@@ -35,20 +34,20 @@ def check_for_updates(file):
                         re.match("(https*:\/\/.*?)\/", url).group(1) + last_entry_url
                     )
                 if url == last_entry_url:
-                    print(f"{idx}- Nothing new (-_-)")
+                    print(f"{index}- Nothing new (-_-)")
                 else:
                     r = requests.get(last_entry_url)
                     soup = bs4(r.text, "lxml")
                     if len(soup.find_all("img")) > MIN_MANGA_PANEL:
                         print(
-                            f"{idx}- Manga Update Found: \t\t"
+                            f"{index}- Manga Update Found: \t\t"
                             + name
                             + "\t\t"
                             + last_entry_url
                         )
                         el["url"] = last_entry_url
                     else:
-                        print(f"{idx}- Nothing new (-_-)")
+                        print(f"{index}- Nothing new (-_-)")
         except requests.exceptions.RequestException as e:
             print(e)
         except IndexError as e:
@@ -69,10 +68,8 @@ def add_manga():
             u = input("url: ")
             c = input("css selector: ")
             if m and n and u:
-                idx = len(data)
                 data.append(
                     {
-                        "idx": idx,
                         "manga_url": m,
                         "name": n,
                         "url": u,
@@ -109,21 +106,18 @@ def list_manga(sort=False):
         names = []
         urls = {}
         longest_len = 0
-        i = 0
 
-        for _, el in enumerate(data):
+        for el in data:
             names.append(el["name"])
             urls[el["name"]] = el["manga_url"]
             longest_len = max(longest_len, len(el["name"]))
 
         if sort:
-            for name in sorted(names):
-                print(str(i) + "- " + name.ljust(longest_len + 5), urls[name])
-                i += 1
+            for index, name in enumerate(sorted(names)):
+                print(str(index) + "- " + name.ljust(longest_len + 5), urls[name])
         else:
-            for name in names:
-                print(str(i) + "- " + name.ljust(longest_len + 5), urls[name])
-                i += 1
+            for index, name in enumerate(names):
+                print(str(index) + "- " + name.ljust(longest_len + 5), urls[name])
 
         print()
         f.close()
