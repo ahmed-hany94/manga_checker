@@ -100,6 +100,43 @@ def delete_manga():
     return data
 
 
+def update_manga():
+    try:
+        list_manga(sort=False)
+        index = input("index: ")
+        with open(JSON_FILE) as f:
+            data = json.load(f)
+            chosen = data[int(index)]
+            while True:
+                choice = input(
+                    f"1- {chosen['manga_url']}\n"
+                    + f"2- {chosen['name']}\n"
+                    + f"3- {chosen['url']}\n"
+                    + f"4- {chosen['css_selector']}\n"
+                    + f"5- q for quit\n"
+                    + f"> "
+                )
+                if choice == str(1):
+                    chosen["manga_url"] = input("enter new manga url: ")
+                elif choice == str(2):
+                    chosen["name"] = input("enter new manga name: ")
+                elif choice == str(3):
+                    chosen["url"] = input("enter latest manga url: ")
+                elif choice == str(4):
+                    chosen["css_selector"] = input(
+                        "enter latest chapter css selector: "
+                    )
+                elif choice == "q":
+                    break
+                else:
+                    print(f"wrong input: {choice}")
+            f.close()
+    except KeyboardInterrupt:
+        exit(0)
+
+    return data
+
+
 def list_manga(sort=False):
     with open(JSON_FILE) as f:
         data = json.load(f)
@@ -114,10 +151,10 @@ def list_manga(sort=False):
 
         if sort:
             for index, name in enumerate(sorted(names)):
-                print(str(index) + "- " + name.ljust(longest_len + 5), urls[name])
+                print(f"{str(index)}- {name.ljust(longest_len + 5 )}{urls[name]}")
         else:
             for index, name in enumerate(names):
-                print(str(index) + "- " + name.ljust(longest_len + 5), urls[name])
+                print(f"{str(index)}- {name.ljust(longest_len + 5 )}{urls[name]}")
 
         print()
         f.close()
@@ -134,6 +171,9 @@ def main():
     parser.add_argument("-a", "--add_manga", help="add new manga", action="store_true")
     parser.add_argument(
         "-d", "--delete_manga", help="delete existing manga", action="store_true"
+    )
+    parser.add_argument(
+        "-u", "--update_manga", help="update new manga", action="store_true"
     )
     parser.add_argument("-c", "--count", help="how many manga", action="store_true")
     parser.add_argument("-l", "--list", help="list manga_sites", action="store_true")
@@ -152,6 +192,11 @@ def main():
 
     if args.delete_manga:
         data = delete_manga()
+        update_json(data)
+        exit(0)
+
+    if args.update_manga:
+        data = update_manga()
         update_json(data)
         exit(0)
 

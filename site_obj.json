@@ -1,122 +1,122 @@
 [
-    {
-        "manga_url": "https://chapmanganato.com/manga-ls951475",
-        "name": "Hajime No Ippo",
-        "url": "https://chapmanganato.com/manga-ls951475/chapter-1424",
-        "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-        "manga_url": "https://readmyhero.online/",
-        "name": "Boku no Hero Academia",
-        "url": "https://readmyhero.online/manga/my-hero-academia-chapter-391/",
-        "css_selector": ".su-post > a"
-    },
-    {
-        "manga_url": "https://chapmanganato.com/manga-ma952557",
-        "name": "Berserk",
-        "url": "https://chapmanganato.com/manga-ma952557/chapter-373",
-        "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-        "manga_url": "https://chapmanganato.com/manga-qi951517",
-        "name": "Kingdom",
-        "url": "https://chapmanganato.com/manga-qi951517/chapter-760",
-        "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-        "manga_url": "https://chapmanganato.com/manga-xm951847",
-        "name": "Detective Conan",
-        "url": "https://chapmanganato.com/manga-xm951847/chapter-1114",
-        "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-        "manga_url": "https://chapmanganato.com/manga-em981495",
-        "name": "SPY x FAMILY",
-        "url": "https://chapmanganato.com/manga-em981495/chapter-82",
-        "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-        "manga_url": "https://chapmanganato.com/manga-du980903",
-        "name": "Blue Period",
-        "url": "https://chapmanganato.com/manga-du980903/chapter-62",
-        "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-        "manga_url": "https://chapmanganato.com/manga-cg980189",
-        "name": "Fairy Tail: 100 Years Quest",
-        "url": "https://chapmanganato.com/manga-cg980189/chapter-135",
-        "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-        "manga_url": "https://chapmanganato.com/manga-se951539",
-        "name": "Vinland Saga",
-        "url": "https://chapmanganato.com/manga-se951539/chapter-202",
-        "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-        "manga_url": "https://chapmanganato.com/manga-ia985483",
-        "name": "Brutal: Satsujin Kansatsukan no Kokuhaku",
-        "url": "https://chapmanganato.com/manga-ia985483/chapter-19.5",
-        "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-        "manga_url": "https://chapmanganato.com/manga-ds980701",
-        "name": "Record of Ragnarok",
-        "url": "https://chapmanganato.com/manga-ds980701/chapter-78",
-        "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-        "manga_url": "https://chapmanganato.com/manga-ls952253",
-        "name": "Bungou Stray Dogs",
-        "url": "https://chapmanganato.com/manga-ls952253/chapter-107.5",
-        "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-        "manga_url": "https://chapmanganato.com/manga-fy982581",
-        "name": "Futari Solo Camp",
-        "url": "https://chapmanganato.com/manga-fy982581/chapter-29",
-        "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-        "manga_url": "https://chapmanganato.com/manga-fh982816",
-        "name": "Song Of The Night Walkers",
-        "url": "https://chapmanganato.com/manga-fh982816/chapter-174",
-        "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-        "manga_url": "https://chapmanganato.com/manga-jh951716",
-        "name": "Enen No Shouboutai",
-        "url": "https://chapmanganato.com/manga-jh951716/chapter-304",
-        "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-        "manga_url": "https://mangakakalot.com/manga/river_end_cafe",
-        "name": "River End Cafe",
-        "url": "https://mangakakalot.com/chapter/river_end_cafe/chapter_61",
-        "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
-    },
-    {
-        "manga_url": "https://chapmanganato.com/manga-kr954974",
-        "name": "Tomodachi Game",
-        "url": "https://chapmanganato.com/manga-kr954974/chapter-112",
-        "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
-    },
-    {
-        "manga_url": "https://chapmanganato.com/manga-ou991929",
-        "name": "The Fable - The Second Contact",
-        "url": "https://chapmanganato.com/manga-ou991929/chapter-47",
-        "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li > a"
-    },
-    {
-        "manga_url": "https://mangakakalot.com/manga/on932442",
-        "name": "Furitsumore Kodoku na Shi yo",
-        "url": "https://mangakakalot.com/chapter/on932442/chapter_10",
-        "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
-    },
-    {
-        "manga_url": "https://mangakakalot.com/manga/under_ninja",
-        "name": "Under Ninja",
-        "url": "https://mangakakalot.com/chapter/under_ninja/chapter_37",
-        "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
-    }
+  {
+    "manga_url": "https://chapmanganato.com/manga-ls951475",
+    "name": "Hajime No Ippo",
+    "url": "https://chapmanganato.com/manga-ls951475/chapter-1424",
+    "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+  },
+  {
+    "manga_url": "https://readmyhero.online/",
+    "name": "Boku no Hero Academia",
+    "url": "https://readmyhero.online/manga/my-hero-academia-chapter-391/",
+    "css_selector": ".su-post > a"
+  },
+  {
+    "manga_url": "https://chapmanganato.com/manga-ma952557",
+    "name": "Berserk",
+    "url": "https://chapmanganato.com/manga-ma952557/chapter-373",
+    "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+  },
+  {
+    "manga_url": "https://chapmanganato.com/manga-qi951517",
+    "name": "Kingdom",
+    "url": "https://chapmanganato.com/manga-qi951517/chapter-761",
+    "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+  },
+  {
+    "manga_url": "https://chapmanganato.com/manga-xm951847",
+    "name": "Detective Conan",
+    "url": "https://chapmanganato.com/manga-xm951847/chapter-1114",
+    "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+  },
+  {
+    "manga_url": "https://chapmanganato.com/manga-em981495",
+    "name": "SPY x FAMILY",
+    "url": "https://chapmanganato.com/manga-em981495/chapter-82",
+    "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+  },
+  {
+    "manga_url": "https://chapmanganato.com/manga-du980903",
+    "name": "Blue Period",
+    "url": "https://chapmanganato.com/manga-du980903/chapter-62",
+    "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+  },
+  {
+    "manga_url": "https://chapmanganato.com/manga-cg980189",
+    "name": "Fairy Tail: 100 Years Quest",
+    "url": "https://chapmanganato.com/manga-cg980189/chapter-135",
+    "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+  },
+  {
+    "manga_url": "https://chapmanganato.com/manga-se951539",
+    "name": "Vinland Saga",
+    "url": "https://chapmanganato.com/manga-se951539/chapter-202",
+    "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+  },
+  {
+    "manga_url": "https://chapmanganato.com/manga-ia985483",
+    "name": "Brutal: Satsujin Kansatsukan no Kokuhaku",
+    "url": "https://chapmanganato.com/manga-ia985483/chapter-19.5",
+    "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+  },
+  {
+    "manga_url": "https://chapmanganato.com/manga-ds980701",
+    "name": "Record of Ragnarok",
+    "url": "https://chapmanganato.com/manga-ds980701/chapter-78",
+    "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+  },
+  {
+    "manga_url": "https://chapmanganato.com/manga-ls952253",
+    "name": "Bungou Stray Dogs",
+    "url": "https://chapmanganato.com/manga-ls952253/chapter-107.5",
+    "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+  },
+  {
+    "manga_url": "https://chapmanganato.com/manga-fy982581",
+    "name": "Futari Solo Camp",
+    "url": "https://chapmanganato.com/manga-fy982581/chapter-29",
+    "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+  },
+  {
+    "manga_url": "https://chapmanganato.com/manga-fh982816",
+    "name": "Song Of The Night Walkers",
+    "url": "https://chapmanganato.com/manga-fh982816/chapter-174",
+    "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+  },
+  {
+    "manga_url": "https://chapmanganato.com/manga-jh951716",
+    "name": "Enen No Shouboutai",
+    "url": "https://chapmanganato.com/manga-jh951716/chapter-304",
+    "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+  },
+  {
+    "manga_url": "https://mangakakalot.com/manga/river_end_cafe",
+    "name": "River End Cafe",
+    "url": "https://mangakakalot.com/chapter/river_end_cafe/chapter_61",
+    "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
+  },
+  {
+    "manga_url": "https://chapmanganato.com/manga-kr954974",
+    "name": "Tomodachi Game",
+    "url": "https://chapmanganato.com/manga-kr954974/chapter-113",
+    "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li:nth-child(1) > a"
+  },
+  {
+    "manga_url": "https://chapmanganato.com/manga-ou991929",
+    "name": "The Fable - The Second Contact",
+    "url": "https://chapmanganato.com/manga-ou991929/chapter-47",
+    "css_selector": "body > div.body-site > div.container.container-main > div.container-main-left > div.panel-story-chapter-list > ul > li > a"
+  },
+  {
+    "manga_url": "https://mangakakalot.com/manga/on932442",
+    "name": "Furitsumore Kodoku na Shi yo",
+    "url": "https://mangakakalot.com/chapter/on932442/chapter_11",
+    "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
+  },
+  {
+    "manga_url": "https://mangakakalot.com/manga/under_ninja",
+    "name": "Under Ninja",
+    "url": "https://mangakakalot.com/chapter/under_ninja/chapter_39",
+    "css_selector": "#chapter > div > div.chapter-list > div:nth-child(1) > span:nth-child(1) > a"
+  }
 ]
