@@ -15,9 +15,9 @@ pp = pprint.PrettyPrinter(indent=4)
 def check_for_updates(file):
     data = json.load(file)
     for index, el in enumerate(data):
-        manga_url = el["manga_url"]
-        url = el["url"]
-        name = el["name"]
+        manga_url    = el["manga_url"]
+        url          = el["url"]
+        name         = el["name"]
         css_selector = el["css_selector"]
 
         try:
@@ -48,6 +48,10 @@ def check_for_updates(file):
                         el["url"] = last_entry_url
                     else:
                         print(f"{index}- Nothing new (-_-)")
+            else:
+                raise requests.ConnectionError(
+                    "Expected status code 200, but got {}".format(r.status_code)
+                )
         except requests.exceptions.RequestException as e:
             print(e)
         except IndexError as e:
@@ -63,10 +67,10 @@ def add_manga():
     try:
         with open(JSON_FILE) as f:
             data = json.load(f)
-            m = input("manga_url: ")
-            n = input("name: ")
-            u = input("url: ")
-            c = input("css selector: ")
+            m    = input("manga_url: ")
+            n    = input("name: ")
+            u    = input("url: ")
+            c    = input("css selector: ")
             if m and n and u:
                 data.append(
                     {
@@ -137,24 +141,35 @@ def update_manga():
     return data
 
 
-def list_manga(sort=False):
+def list_manga(sort=False, latest=False):
     with open(JSON_FILE) as f:
-        data = json.load(f)
-        names = []
-        urls = {}
+        data        = json.load(f)
+        names       = []
+        urls        = {}
         longest_len = 0
 
         for el in data:
             names.append(el["name"])
-            urls[el["name"]] = el["manga_url"]
+            urls[el["name"]] = [el["manga_url"], el["url"]]
             longest_len = max(longest_len, len(el["name"]))
 
+        def print_formatted(list, l=0):
+            for index, name in enumerate(list):
+                    i       = str(index).ljust(len(str(len(data))))
+                    spacing = longest_len + 5
+                    print(f"{i}- {name.ljust(spacing)}{urls[name][l]}")
+
         if sort:
-            for index, name in enumerate(sorted(names)):
-                print(f"{str(index)}- {name.ljust(longest_len + 5 )}{urls[name]}")
+            if latest:
+                print_formatted(sorted(names), 1)
+            else:
+                print_formatted(sorted(names))
         else:
-            for index, name in enumerate(names):
-                print(f"{str(index)}- {name.ljust(longest_len + 5 )}{urls[name]}")
+            if latest:
+                print_formatted(names, 1)
+
+            else:
+                print_formatted(names)
 
         print()
         f.close()
@@ -167,20 +182,34 @@ def update_json(data):
 
 
 def main():
+    # -e is reserved for the batch file used in calling this
+    # to edit it
     parser = argparse.ArgumentParser()
-    parser.add_argument("-a", "--add_manga", help="add new manga", action="store_true")
+    parser.add_argument(
+        "-a", "--add_manga", help="add new manga", action="store_true"
+    )
     parser.add_argument(
         "-d", "--delete_manga", help="delete existing manga", action="store_true"
     )
     parser.add_argument(
         "-u", "--update_manga", help="update new manga", action="store_true"
     )
-    parser.add_argument("-c", "--count", help="how many manga", action="store_true")
-    parser.add_argument("-l", "--list", help="list manga_sites", action="store_true")
+    parser.add_argument(
+        "-c", "--count", help="how many manga", action="store_true"
+    )
+    parser.add_argument(
+        "-l", "--list", help="list manga_sites", action="store_true"
+    )
     parser.add_argument(
         "-la",
-        "--list-alphabetically",
+        "--list_alphabetically",
         help="list manga_sites alphabetically",
+        action="store_true",
+    )
+    parser.add_argument(
+        "-L",
+        "--latest",
+        help="list latest updates urls",
         action="store_true",
     )
     args = parser.parse_args()
@@ -211,8 +240,16 @@ def main():
         list_manga(sort=False)
         exit(0)
 
+    if args.list_alphabetically and args.latest:
+        list_manga(sort=True, latest=True)
+        exit(0)
+
     if args.list_alphabetically:
         list_manga(sort=True)
+        exit(0)
+
+    if args.latest:
+        list_manga(sort=False, latest=True)
         exit(0)
 
     with open(JSON_FILE) as f:
